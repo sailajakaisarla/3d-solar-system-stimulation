@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <p>Loading Solar System...</p>
+        <div class="spinner"></div>
+    </div>
+    <div id="canvas-container"></div>
+
+    <div id="control-panel">
+        <h2>Solar System Controls</h2>
+        <div class="control-group">
+            <button id="pauseResumeBtn">Pause</button>
+            <button id="darkLightToggle">Dark Mode</button>
+        </div>
+        <div id="planet-speed-controls">
+            </div>
+    </div>
+
+    <div id="planet-info" class="hidden"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
